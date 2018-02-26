@@ -27,7 +27,7 @@ public class Oop1 {
         Group group = new Group();
         try {
             //group.id = -23;
-            group.setId(-23);
+            group.setId(23);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
@@ -44,7 +44,7 @@ public class Oop1 {
         System.out.println(group.getId());
         
         Student student = new Student();
-        student.setId(12);
+        student.setId(-12);
         student.setFirstName("st1");
         student.setLastName("l_st1");
         student.setGroupId(23);
