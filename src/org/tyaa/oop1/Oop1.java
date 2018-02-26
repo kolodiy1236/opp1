@@ -18,7 +18,7 @@ public class Oop1 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         
         //int x = 10;
         //String s = "sdafsd";
@@ -44,22 +44,22 @@ public class Oop1 {
         System.out.println(group.getId());
         
         Student student = new Student();
-        student.id = 12;
-        student.firstName = "st1";
-        student.lastName = "l_st1";
-        student.groupId = 23;
+        student.setId(12);
+        student.setFirstName("st1");
+        student.setLastName("l_st1");
+        student.setGroupId(23);
         
         Student student2 = new Student();
-        student2.id = 13;
-        student2.firstName = "st2";
-        student2.lastName = "l_st2";
-        student2.groupId = 23;
+        student2.setId(13);
+        student2.setFirstName("st2");
+        student2.setLastName("l_st2");
+        student2.setGroupId(23);
         
         Student student3 = new Student();
-        student3.id = 14;
-        student3.firstName = "st3";
-        student3.lastName = "l_st3";
-        student3.groupId = 24;
+        student3.setId(14);
+        student3.setFirstName("st3");
+        student3.setLastName("l_st3");
+        student3.setGroupId(24);
         
         //System.out.println(student.id);
     }

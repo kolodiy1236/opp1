@@ -11,8 +11,49 @@ package org.tyaa.oop1.entity;
  */
 public class Student {
     
-    public int id;
-    public String firstName;
-    public String lastName;
-    public int groupId;
+    private int id;
+    private String firstName;
+    private String lastName;
+    private int groupId;
+
+    public void setId(int id) throws Exception {
+        
+        if (id >= 0) {
+            
+            this.id = id;
+        } else {
+            
+            throw new Exception("id должен быть больше или равен 0");
+        }
+    }
+ 
+    //public void setId(int id) {
+       // this.id = id;
+   // }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(int groupId) {
+        this.groupId = groupId;
+    }
+
+   
 }
